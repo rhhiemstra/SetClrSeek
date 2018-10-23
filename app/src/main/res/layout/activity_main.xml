@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:background="@drawable/border"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/tv"
+            android:layout_margin="5dp"/>
+
+    </FrameLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+
+        >
+        <TableRow android:layout_marginBottom="20dp" >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Red"
+                style="@style/forText"/>
+            <SeekBar
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/redSB"
+                android:min="0"
+                android:max="255"
+                android:progress="100"
+                style="@style/mySeekBar"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/redTV"
+                android:text="100"
+                style="@style/forText"/>
+        </TableRow>
+        <TableRow android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Green"
+                style="@style/forText"/>
+            <SeekBar
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/greenSB"
+                android:min="0"
+                android:max="255"
+                android:progress="100"
+                style="@style/mySeekBar"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/greenTV"
+                android:text="100"
+                style="@style/forText"/>
+        </TableRow>
+        <TableRow android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Blue"
+            style="@style/forText"/>
+        <SeekBar
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/blueSB"
+            android:min="0"
+            android:max="255"
+            android:progress="100"
+            style="@style/mySeekBar"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/blueTV"
+            android:text="100"
+            style="@style/forText"/>
+    </TableRow>
+        <TableRow android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Opacity"
+                style="@style/forText"/>
+            <SeekBar
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alphaSB"
+                style="@style/mySeekBar"
+
+                android:min="0"
+                android:max="255"
+                android:progress="255"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/alphaTV"
+                android:text="100%"
+                style="@style/forText"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/setClr"
+                android:textSize="24sp"
+                android:text="Set Color"
+                android:layout_span="3"
+                style="@style/forText"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>
